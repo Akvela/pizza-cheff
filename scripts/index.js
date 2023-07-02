@@ -1,16 +1,3 @@
-const initialCards = [ 
-  { name: 'Мясная Делюкс', composition : 'Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы' }, 
-  { name: 'Морская Премиум', composition : 'Перец, сыр, креветки, кальмары, мидии, лосось' },
-  { name: 'Бекон и Сосиски', composition : 'Бекон, сыр, сосиски, ананас, томатная паста' },
-  { name: 'Куриная Делюкс', composition : 'Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста' },
-  { name: 'Барбекю Премиум', composition : 'Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили' },
-  { name: 'Пепперони Дабл', composition : 'Пепперони, сыр, колбаса 2 видов: обжаренная и вареная' },
-  { name: 'Куриное трио', composition : 'Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы' },
-  { name: 'Сырная', composition : 'Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный' },
-];
-
-const cardsContainer = document.querySelector('.cards__gallery'); 
-const cardTemplate = document.querySelector('#card').content; 
 const popupPhoto = document.querySelector('#popup-image'); 
 const popupSubmit = document.querySelector('#popup-submit'); 
 const popupUrl = document.querySelector('.popup__image'); 
@@ -27,27 +14,10 @@ function showPhoto(event) {
   openPopup(popupPhoto); 
 }; 
 
-function createCard(name, composition, index) { 
-  const cardElement = cardTemplate.querySelector('.card').cloneNode(true); 
-  
-  const cardPhoto = cardElement.querySelector('.card__photo'); 
-  const cardName = cardElement.querySelector('.card__name'); 
-  const cardInfo = cardElement.querySelector('.card__composition'); 
-  
-  cardPhoto.src = `../images/layer-${index}.png`; 
-  cardPhoto.alt = 'Пицца ' + name; 
-  cardName.textContent = name; 
-  cardInfo.textContent = composition;
-  
-  cardPhoto.addEventListener('click', showPhoto); 
-  
-  return cardElement; 
-}; 
-
-const newCards = initialCards.map(function(item, index) { 
-  return createCard(item.name, item.composition, index+2); 
-}); 
-cardsContainer.prepend(...newCards); 
+const images = document.querySelectorAll('.card__photo');
+images.forEach((item) => {
+  item.addEventListener('click', showPhoto); 
+})
 
 function closePopup(popup) { 
   document.removeEventListener('keydown', handleEscUp); 
