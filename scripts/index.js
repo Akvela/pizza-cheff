@@ -1,12 +1,12 @@
 const initialCards = [ 
-  { name: 'Мясная Делюкс', link: '../images/Layer 2.png', composition : 'Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы' }, 
-  { name: 'Морская Премиум', link: '../images/Layer 3.png', composition : 'Перец, сыр, креветки, кальмары, мидии, лосось' },
-  { name: 'Бекон и Сосиски', link: '../images/Layer 4.png', composition : 'Бекон, сыр, сосиски, ананас, томатная паста' },
-  { name: 'Куриная Делюкс', link: '../images/Layer 5.png', composition : 'Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста' },
-  { name: 'Барбекю Премиум', link: '../images/Layer 6.png', composition : 'Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили' },
-  { name: 'Пепперони Дабл', link: '../images/Layer 7.png', composition : 'Пепперони, сыр, колбаса 2 видов: обжаренная и вареная' },
-  { name: 'Куриное трио', link: '../images/Layer 8.png', composition : 'Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы' },
-  { name: 'Сырная', link: '../images/Layer 9.png', composition : 'Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный' },
+  { name: 'Мясная Делюкс', link: '../images/layer-2.png', composition : 'Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы' }, 
+  { name: 'Морская Премиум', link: '../images/layer-3.png', composition : 'Перец, сыр, креветки, кальмары, мидии, лосось' },
+  { name: 'Бекон и Сосиски', link: '../images/layer-4.png', composition : 'Бекон, сыр, сосиски, ананас, томатная паста' },
+  { name: 'Куриная Делюкс', link: '../images/layer-5.png', composition : 'Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста' },
+  { name: 'Барбекю Премиум', link: '../images/layer-6.png', composition : 'Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили' },
+  { name: 'Пепперони Дабл', link: '../images/layer-7.png', composition : 'Пепперони, сыр, колбаса 2 видов: обжаренная и вареная' },
+  { name: 'Куриное трио', link: '../images/layer-8.png', composition : 'Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы' },
+  { name: 'Сырная', link: '../images/layer-9.png', composition : 'Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный' },
 ];
 
 const cardsContainer = document.querySelector('.cards__gallery'); 
