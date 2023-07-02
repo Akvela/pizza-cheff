@@ -1,0 +1,30 @@
+.footer__image {
+  position: absolute;
+  right: -128px;
+  top: 175px;
+}
+
+@media screen and (max-width: 1450px) { 
+  .footer__image {
+    right: -8px;
+  }
+}
+
+@media screen and (max-width: 1180px) { 
+  .footer__image {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 873px) { 
+  .footer__image {
+    top: 520px;
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 770px) { 
+  .footer__image {
+    display: none;
+  }
+}

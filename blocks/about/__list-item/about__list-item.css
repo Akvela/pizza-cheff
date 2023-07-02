@@ -1,0 +1,14 @@
+.about__list-item {
+  width: 305px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 340px) { 
+  .about__list-item {
+    width: 290px;
+  }
+}

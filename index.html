@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Pizza cheff</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__container">
+      <img src="./images/logo.png" alt="логотип" class="header__logo">
+      <nav>
+        <ul class="header__menu">
+          <li><a href="#cards" class="header__menu-link">Пиццы</a></li>
+          <li><a href="#cards" class="header__menu-link">Напитки</a></li>
+          <li><a href="#footer" class="header__menu-link">Доставка и оплата</a></li>
+          <li><a href="#footer" class="header__menu-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <section class="about">
+      <div class="about__info">
+        <h1 class="title">Самая вкусная пицца в мире <span class="title title_span">только в Pizza Cheff</span></h1>
+        <ul class="about__list">
+          <li class="about__list-item">
+            <img class="about__item-image" src="./images/hop.png" alt="иконка колоски">
+            <div class="about__item-info">
+              <h2 class="about__item-title">Лучшее тесто</h2>
+              <p class="about__item-paragraph">Мы создаем тесто только из  отборной итальянской муки наивысшего качества</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <img class="about__item-image" src="./images/kitchen-pack.png" alt="иконка шапка повора">
+            <div class="about__item-info">
+              <h2 class="about__item-title">лучшие повара</h2>
+              <p class="about__item-paragraph">Пиццы готовят самые профессиональные  итальянские повара</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <img class="about__item-image" src="./images/seo-and-web.png" alt="иконка качество">
+            <div class="about__item-info">
+              <h2 class="about__item-title">гарантия качества</h2>
+              <p class="about__item-paragraph">Наша пиццерия получила множество наград и  признаний по всему миру</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <img class="about__item-image" src="./images/holidays.png" alt="иконка блюдо">
+            <div class="about__item-info">
+              <h2 class="about__item-title">отборные рецепты</h2>
+              <p class="about__item-paragraph">Мы используем рецепты от мировых лидеров в изготовлении пиццы</p>
+            </div>
+          </li>
+        </ul>
+        <a class="button about__button" href="#cards">Выбрать пиццу</a>
+      </div>
+      <img src="./images/pizza_big.png" class="about__image" alt="Большая пицца">
+    </section>
+    <section class="cards" id="cards">
+      <h2 class="cards__title">Выберите свою любимую пиццу</h2>
+      <ul class="cards__gallery">
+        
+      </ul>
+    </section>
+  </main>
+
+  <template id="card">
+    <li class="card wow animate__animated animate__flipInX">
+      <img src="./images/Layer 2.png" class="card__photo" alt="Пицца мясная делюкс"> 
+      <h3 class="card__name">Мясная Делюкс</h3> 
+      <span class="card__composition">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
+      <button type="button" class="button card__button">В корзину</button>  
+    </li>
+  </template>
+
+  <footer class="footer" id="footer">
+    <div class="footer__info wow animate__animated animate__fadeInLeft">
+      <h2 class="title footer__title"><span class="title title_span footer__title">Хватит думать!</span> Доставим заказ за 30 минут!</h2>
+      <p class="footer__paragraph">
+        Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы 
+        получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы 
+        наш клиент был доволен и не остался голодный!
+      </p>
+    </div>
+    <form class="footer__form wow animate__animated animate__fadeInDown" name="popupSubmit">
+      <label title="Введите ваши ФИО">
+        <input class="footer__input" type="text" id="name" placeholder="Ваше имя" minlength="2" oninput="this.value = this.value.replace(/\./g, '')" pattern="^[a-zA-Zа-яёА-ЯЁ\s-]+$" required>
+      </label>
+      <label title="Введите полный адрес">
+        <input class="footer__input" type="text" id="adress" placeholder="Адрес доставки" minlength="2" pattern="^[a-zA-Zа-яёА-ЯЁ\s-]+$" required>
+      </label>
+      <label title="Введите телефон в формате +71234567890">
+        <input class="footer__input" type="tel" id="phone" placeholder="Телефон" pattern="^\+7[1-9]{10}$" required>
+      </label>
+      <button class="button" type="submit">Оформить заказ</button>
+    </form>
+    <img class="footer__image wow animate__animated animate__fadeInRight" src="./images/pizzzzza.png" alt="Кусоче пиццы">
+  </footer>
+
+  <div class="popup" id="popup-image"> 
+    <div class="popup__container popup__container_image"> 
+      <img src="./images/Layer 2.png" class="popup__image" alt="Пицца мясная делюкс"> 
+      <h2 class="popup__name popup__name_image">Мясная делюкс</h2> 
+      <button type="button" class="popup__exit-button" aria-label="Выйти"></button> 
+    </div> 
+  </div> 
+
+  <div class="popup" id="popup-submit"> 
+    <div class="popup__container">  
+      <h2 class="popup__name">Спасибо за заказ</h2> 
+      <button type="button" class="popup__exit-button" aria-label="Выйти"></button> 
+    </div> 
+  </div> 
+
+  <script src="./scripts/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+</body>
+</html>

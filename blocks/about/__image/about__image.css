@@ -1,0 +1,24 @@
+.about__image {
+  display: block;
+  width: 520px;
+  height: 342px;
+}
+
+@media screen and (max-width: 1230px) { 
+  .about__image {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 585px) { 
+  .about__image {
+    width: 350px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 375px) { 
+  .about__image {
+    width: 300px;
+  }
+}

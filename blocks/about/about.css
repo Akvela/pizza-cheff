@@ -1,0 +1,14 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 127px 0 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 930px) { 
+  .about {
+    padding-top: 50px;
+  }
+}

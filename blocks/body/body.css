@@ -1,0 +1,9 @@
+.body {
+  font-family: 'Muller', sans-serif;
+}
+
+@media screen and (max-width: 1230px) { 
+  .body {
+    padding: 10px;
+  }
+}

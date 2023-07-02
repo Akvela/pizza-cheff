@@ -1,0 +1,16 @@
+.about__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 38px 0 52px;
+  width: 100%;
+  padding-left: 0;
+  gap: 33px 40px;
+}
+
+@media screen and (max-width: 585px) { 
+  .about__list {
+    gap: 15px;
+    justify-content: center;
+  }
+}

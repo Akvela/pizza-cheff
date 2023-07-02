@@ -1,0 +1,25 @@
+.header__menu {
+  list-style-type: none;
+  display: flex;
+  gap: 47px;
+  margin: 25px 0 0 210px;
+}
+
+@media screen and (max-width: 930px) { 
+  .header__menu {
+    margin-left: 60px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 815px) { 
+  .header__menu {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) { 
+  .header__menu {
+    margin-left: 10px;
+  }
+}

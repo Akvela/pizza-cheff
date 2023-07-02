@@ -1,0 +1,22 @@
+.footer__info {
+  width: 384px;
+  margin-right: 126px;
+}
+
+@media screen and (max-width: 1450px) { 
+  .footer__info {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1180px) { 
+  .footer__info {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 870px) { 
+  .footer__info {
+    width: 384px;
+  }
+}
